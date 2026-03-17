@@ -1,0 +1,332 @@
+﻿@model shoes_asp.Models.Product
+
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="bread">
+                    <span><a asp-controller="Home" asp-action="Index">Trang chủ</a></span> /
+                    <span>Chi tiết sản phẩm</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="colorlib-product">
+    <div class="container">
+        <div class="row row-pb-lg product-detail-wrap">
+            <div class="col-sm-8">
+                <div class="owl-carousel">
+                    <div class="item">
+                        <div class="product-entry border">
+                            <a href="#" class="prod-img">
+                                <img src="~/images/@Model.Image" class="img-fluid" alt="@Model.Name">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-entry border">
+                            <a href="#" class="prod-img">
+                                <img src="~/images/@Model.Image" class="img-fluid" alt="@Model.Name">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-entry border">
+                            <a href="#" class="prod-img">
+                                <img src="~/images/@Model.Image" class="img-fluid" alt="@Model.Name">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-entry border">
+                            <a href="#" class="prod-img">
+                                <img src="~/images/@Model.Image" class="img-fluid" alt="@Model.Name">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="product-desc">
+                    <h3>@Model.Name</h3>
+                    <p class="price">
+                        <span>@Model.Price $</span>
+                        <span class="rate">
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-half"></i>
+                            (74 đánh giá)
+                        </span>
+                    </p>
+
+                    <p>@Model.Description</p>
+
+                    <div class="size-wrap">
+                        <div class="block-26 mb-2">
+                            <h4>Kích cỡ</h4>
+                            <ul>
+                                <li><a href="#">7</a></li>
+                                <li><a href="#">7.5</a></li>
+                                <li><a href="#">8</a></li>
+                                <li><a href="#">8.5</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#">9.5</a></li>
+                                <li><a href="#">10</a></li>
+                                <li><a href="#">10.5</a></li>
+                                <li><a href="#">11</a></li>
+                                <li><a href="#">11.5</a></li>
+                                <li><a href="#">12</a></li>
+                                <li><a href="#">12.5</a></li>
+                                <li><a href="#">13</a></li>
+                                <li><a href="#">13.5</a></li>
+                                <li><a href="#">14</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="block-26 mb-4">
+                            <h4>Bề rộng</h4>
+                            <ul>
+                                <li><a href="#">M</a></li>
+                                <li><a href="#">W</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-4">
+                        <span class="input-group-btn">
+                            <button type="button" class="quantity-left-minus btn" data-type="minus">
+                                <i class="icon-minus2"></i>
+                            </button>
+                        </span>
+
+                        <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
+
+                        <span class="input-group-btn ml-1">
+                            <button type="button" class="quantity-right-plus btn" data-type="plus">
+                                <i class="icon-plus2"></i>
+                            </button>
+                        </span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <p class="addtocart">
+                                <a asp-controller="Cart" asp-action="Index" class="btn btn-primary btn-addtocart">
+                                    <i class="icon-shopping-cart"></i> Thêm vào giỏ hàng
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-md-12 pills">
+                        <div class="bd-example bd-example-tabs">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="pills-description-tab" data-toggle="pill" href="#pills-description" role="tab">
+                                        Mô tả
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-manufacturer-tab" data-toggle="pill" href="#pills-manufacturer" role="tab">
+                                        Nhà sản xuất
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-review-tab" data-toggle="pill" href="#pills-review" role="tab">
+                                        Đánh giá
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane border fade show active" id="pills-description" role="tabpanel">
+                                    <p>@Model.Description</p>
+                                    <p>Sản phẩm giày thời trang, thiết kế hiện đại, phù hợp cho đi học, đi làm và đi chơi.</p>
+                                    <ul>
+                                        <li>Chất liệu bền đẹp</li>
+                                        <li>Kiểu dáng thời trang</li>
+                                        <li>Form giày ôm chân</li>
+                                        <li>Đế chống trơn trượt</li>
+                                        <li>Phù hợp nhiều phong cách</li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-pane border fade" id="pills-manufacturer" role="tabpanel">
+                                    <p>Cửa hàng Footwear</p>
+                                    <p>Nhà cung cấp giày thời trang chất lượng cho đồ án ASP.NET Core MVC.</p>
+                                </div>
+
+                                <div class="tab-pane border fade" id="pills-review" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <h3 class="head">3 đánh giá</h3>
+
+                                            <div class="review">
+                                                <div class="user-img" style="background-image: url('/images/person1.jpg')"></div>
+                                                <div class="desc">
+                                                    <h4>
+                                                        <span class="text-left">Vương Tuyết Quân</span>
+                                                        <span class="text-right">14/03/2025</span>
+                                                    </h4>
+                                                    <p class="star">
+                                                        <span>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-half"></i>
+                                                            <i class="icon-star-empty"></i>
+                                                        </span>
+                                                    </p>
+                                                    <p>Giày đẹp, đi êm chân, form khá chuẩn.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="review">
+                                                <div class="user-img" style="background-image: url('/images/person2.jpg')"></div>
+                                                <div class="desc">
+                                                    <h4>
+                                                        <span class="text-left">Trần Thị B</span>
+                                                        <span class="text-right">18/03/2025</span>
+                                                    </h4>
+                                                    <p class="star">
+                                                        <span>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-empty"></i>
+                                                        </span>
+                                                    </p>
+                                                    <p>Mẫu mã đẹp, giá phù hợp, đáng mua.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="review">
+                                                <div class="user-img" style="background-image: url('/images/person3.jpg')"></div>
+                                                <div class="desc">
+                                                    <h4>
+                                                        <span class="text-left">Lê Văn C</span>
+                                                        <span class="text-right">22/03/2025</span>
+                                                    </h4>
+                                                    <p class="star">
+                                                        <span>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-half"></i>
+                                                            <i class="icon-star-empty"></i>
+                                                        </span>
+                                                    </p>
+                                                    <p>Giao diện hiển thị đẹp, phù hợp làm đồ án.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="rating-wrap">
+                                                <h3 class="head">Thống kê đánh giá</h3>
+                                                <div class="wrap">
+                                                    <p class="star">
+                                                        <span>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-full"></i>
+                                                            (98%)
+                                                        </span>
+                                                        <span>20 đánh giá</span>
+                                                    </p>
+                                                    <p class="star">
+                                                        <span>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-empty"></i>
+                                                            (85%)
+                                                        </span>
+                                                        <span>10 đánh giá</span>
+                                                    </p>
+                                                    <p class="star">
+                                                        <span>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-empty"></i>
+                                                            <i class="icon-star-empty"></i>
+                                                            (70%)
+                                                        </span>
+                                                        <span>5 đánh giá</span>
+                                                    </p>
+                                                    <p class="star">
+                                                        <span>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-empty"></i>
+                                                            <i class="icon-star-empty"></i>
+                                                            <i class="icon-star-empty"></i>
+                                                            (10%)
+                                                        </span>
+                                                        <span>0 đánh giá</span>
+                                                    </p>
+                                                    <p class="star">
+                                                        <span>
+                                                            <i class="icon-star-full"></i>
+                                                            <i class="icon-star-empty"></i>
+                                                            <i class="icon-star-empty"></i>
+                                                            <i class="icon-star-empty"></i>
+                                                            <i class="icon-star-empty"></i>
+                                                            (0%)
+                                                        </span>
+                                                        <span>0 đánh giá</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('.quantity-right-plus').click(function (e) {
+                e.preventDefault();
+                var quantity = parseInt($('#quantity').val());
+                $('#quantity').val(quantity + 1);
+            });
+
+            $('.quantity-left-minus').click(function (e) {
+                e.preventDefault();
+                var quantity = parseInt($('#quantity').val());
+                if (quantity > 1) {
+                    $('#quantity').val(quantity - 1);
+                }
+            });
+        });
+    </script>
+}

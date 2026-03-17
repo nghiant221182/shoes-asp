@@ -1,0 +1,142 @@
+﻿@model IEnumerable<shoes_asp.Models.Product>
+
+@{
+    ViewData["Title"] = "Sản phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="bread">
+                    <span><a asp-controller="Home" asp-action="Index">Trang chủ</a></span> /
+                    <span>Sản phẩm</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="breadcrumbs-two">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="breadcrumbs-img" style="background-image: url('/images/cover-img-1.jpg');">
+                    <h2>Giày nam</h2>
+                </div>
+                <div class="menu text-center">
+                    <p>
+                        <a href="#">Hàng mới về</a>
+                        <a href="#">Bán chạy</a>
+                        <a href="#">Cỡ lớn</a>
+                        <a href="#">Giảm giá</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="colorlib-featured">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <div class="featured">
+                    <div class="featured-img featured-img-2" style="background-image: url('/images/men.jpg');">
+                        <h2>Giày thường ngày</h2>
+                        <p><a href="#" class="btn btn-primary btn-lg">Mua ngay</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="featured">
+                    <div class="featured-img featured-img-2" style="background-image: url('/images/women.jpg');">
+                        <h2>Giày công sở</h2>
+                        <p><a href="#" class="btn btn-primary btn-lg">Mua ngay</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="featured">
+                    <div class="featured-img featured-img-2" style="background-image: url('/images/item-11.jpg');">
+                        <h2>Giày thể thao</h2>
+                        <p><a href="#" class="btn btn-primary btn-lg">Mua ngay</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="colorlib-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2 text-center colorlib-heading colorlib-heading-sm">
+                <h2>Tất cả sản phẩm</h2>
+            </div>
+        </div>
+
+        <div class="row row-pb-md">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-3 col-lg-3 mb-4 text-center">
+                    <div class="product-entry border">
+                        <a asp-controller="Product" asp-action="Details" asp-route-id="@item.Id" class="prod-img">
+                            <img src="~/images/@item.Image" class="img-fluid" alt="@item.Name">
+                        </a>
+                        <div class="desc">
+                            <h2>
+                                <a asp-controller="Product" asp-action="Details" asp-route-id="@item.Id">
+                                    @item.Name
+                                </a>
+                            </h2>
+                            <span class="price">@item.Price $</span>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="block-27">
+                    <ul>
+                        <li><a href="#"><i class="ion-ios-arrow-back"></i></a></li>
+                        <li class="active"><span>1</span></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#"><i class="ion-ios-arrow-forward"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="colorlib-partner">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2 text-center colorlib-heading colorlib-heading-sm">
+                <h2>Đối tác tin cậy</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col partner-col text-center">
+                <img src="~/images/brand-1.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col partner-col text-center">
+                <img src="~/images/brand-2.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col partner-col text-center">
+                <img src="~/images/brand-3.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col partner-col text-center">
+                <img src="~/images/brand-4.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col partner-col text-center">
+                <img src="~/images/brand-5.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</div>
