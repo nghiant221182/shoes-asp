@@ -2,14 +2,16 @@
 
 namespace shoes_asp.Models
 {
-    public class Category
+    public class Brand
     {
         [Key]
-        public int CategoryId { get; set; }
+        public int BrandId { get; set; }
 
-        [Required(ErrorMessage = "Tên danh mục không được để trống")]
+        [Required(ErrorMessage = "Tên thương hiệu không được để trống")]
         [StringLength(100)]
         public string Name { get; set; }
+
+        public string? Logo { get; set; }
 
         public ICollection<Product>? Products { get; set; }
     }

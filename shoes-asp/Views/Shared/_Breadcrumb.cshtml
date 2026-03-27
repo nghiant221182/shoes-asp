@@ -1,0 +1,24 @@
+﻿@{
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+    var pageTitle = ViewData["Title"]?.ToString() ?? currentAction ?? "";
+}
+
+@if (!(currentController == "Home" && currentAction == "Index"))
+{
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="bread">
+                        <span>
+                            <a asp-controller="Home" asp-action="Index">Trang chủ</a>
+                        </span>
+                        /
+                        <span>@pageTitle</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+}

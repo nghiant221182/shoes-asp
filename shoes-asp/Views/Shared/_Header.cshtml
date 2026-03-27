@@ -25,76 +25,38 @@
 
 
             <div class="row">
+                @{
+                    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+                    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+                }
                 <div class="col-sm-12 text-left menu-1">
                     <ul>
-
-                        <li>
+                        <li class="@(currentController == "Home" && currentAction == "Index" ? "active" : "")">
                             <a asp-controller="Home" asp-action="Index">Trang chủ</a>
                         </li>
 
-                        <li class="has-dropdown active">
+                        <li class="@(currentController == "Product" && currentAction == "Index" ? "active" : "")">
                             <a asp-controller="Product" asp-action="Index">Sản phẩm</a>
-
-                            <ul class="dropdown">
-
-                                <li>
-                                    <a asp-controller="Product"
-                                       asp-action="Details"
-                                       asp-route-id="1">
-                                        Chi tiết sản phẩm
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a asp-controller="Cart" asp-action="Index">
-                                        Giỏ hàng
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a asp-controller="Checkout" asp-action="Index">
-                                        Thanh toán
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a asp-controller="Order" asp-action="Complete">
-                                        Hoàn tất đơn hàng
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Danh sách yêu thích</a>
-                                </li>
-
-                            </ul>
                         </li>
 
-                        <li>
-                            <a asp-controller="Product" asp-action="Index">
-                                Giày nữ
-                            </a>
+                        <li class="@(currentController == "Product" && currentAction == "Women" ? "active" : "")">
+                            <a asp-controller="Product" asp-action="Women">Giày nữ</a>
                         </li>
 
-                        <li>
-                            <a asp-controller="Home" asp-action="About">
-                                Giới thiệu
-                            </a>
+                        <li class="@(currentController == "Home" && currentAction == "About" ? "active" : "")">
+                            <a asp-controller="Home" asp-action="About">Giới thiệu</a>
                         </li>
 
-                        <li>
-                            <a asp-controller="Home" asp-action="Contact">
-                                Liên hệ
-                            </a>
+                        <li class="@(currentController == "Home" && currentAction == "Contact" ? "active" : "")">
+                            <a asp-controller="Home" asp-action="Contact">Liên hệ</a>
                         </li>
 
-                        <li class="cart">
+                        <li class="cart @(currentController == "Cart" && currentAction == "Index" ? "active" : "")">
                             <a asp-controller="Cart" asp-action="Index">
                                 <i class="icon-shopping-cart"></i>
                                 Giỏ hàng [0]
                             </a>
                         </li>
-
                     </ul>
                 </div>
             </div>

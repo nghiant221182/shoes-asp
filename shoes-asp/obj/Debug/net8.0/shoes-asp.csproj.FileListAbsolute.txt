@@ -66,3 +66,4 @@ D:\FL\project_TN\shoes-asp\shoes-asp\obj\Debug\net8.0\refint\shoes-asp.dll
 D:\FL\project_TN\shoes-asp\shoes-asp\obj\Debug\net8.0\shoes-asp.pdb
 D:\FL\project_TN\shoes-asp\shoes-asp\obj\Debug\net8.0\shoes-asp.genruntimeconfig.cache
 D:\FL\project_TN\shoes-asp\shoes-asp\obj\Debug\net8.0\ref\shoes-asp.dll
+D:\FL\project_TN\shoes-asp\shoes-asp\obj\Debug\net8.0\shoes-asp.sourcelink.json

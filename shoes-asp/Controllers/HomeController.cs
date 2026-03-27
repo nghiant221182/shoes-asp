@@ -1,32 +1,46 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using shoes_asp.Models;
 
 namespace shoes_asp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly AppDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(AppDbContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int page = 1)
         {
-            return RedirectToAction("Index", "Product");
+            int pageSize = 8;
+
+            var totalProducts = _context.Products.Count();
+
+            var products = _context.Products
+                .Include(p => p.Category)
+                .Include(p => p.Brand)
+                .OrderBy(p => p.ProductId)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            ViewBag.CurrentPage = page;
+            ViewBag.TotalPages = (int)Math.Ceiling((double)totalProducts / pageSize);
+
+            return View(products);
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult Contact()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
         }
     }
 }
