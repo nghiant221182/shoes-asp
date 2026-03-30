@@ -12,8 +12,28 @@
         <div class="row">
             <div class="col-sm-8 offset-sm-2 text-center colorlib-heading colorlib-heading-sm">
                 <h2>Tất cả sản phẩm</h2>
+
+                @if (!string.IsNullOrEmpty(ViewBag.Keyword))
+                {
+                    <p>Kết quả tìm kiếm cho: <strong>@ViewBag.Keyword</strong></p>
+                }
+
+                @if (ViewBag.CategoryName != null)
+                {
+                    <p>Danh mục đang chọn: <strong>@ViewBag.CategoryName</strong></p>
+                }
             </div>
         </div>
+        @if (ViewBag.CategoryId != null)
+        {
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <a asp-controller="Product" asp-action="Index" class="btn btn-outline-primary">
+                        Xem tất cả sản phẩm
+                    </a>
+                </div>
+            </div>
+        }
 
         <div class="row row-pb-md">
             @if (Model != null && Model.Any())
@@ -22,7 +42,6 @@
                 {
                     <div class="col-md-3 col-lg-3 mb-4 text-center">
                         <div class="product-entry border">
-
                             <a asp-controller="Product"
                                asp-action="Details"
                                asp-route-id="@item.ProductId"
@@ -40,10 +59,7 @@
                                 </h2>
 
                                 <p>@item.Brand?.Name - @item.Category?.Name</p>
-
-                                <p>
-                                    <strong>Size:</strong> @item.Size
-                                </p>
+                                <p><strong>Size:</strong> @item.Size</p>
 
                                 @{
                                     var fullStars = (int)Math.Floor(item.Rate);
@@ -74,7 +90,6 @@
 
                                 <span class="price">@item.Price.ToString("N0") VNĐ</span>
                             </div>
-
                         </div>
                     </div>
                 }
@@ -82,7 +97,7 @@
             else
             {
                 <div class="col-12 text-center">
-                    <h4>Hiện chưa có sản phẩm nào.</h4>
+                    <h4>Không tìm thấy sản phẩm phù hợp.</h4>
                 </div>
             }
         </div>

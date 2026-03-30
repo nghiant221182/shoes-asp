@@ -32,26 +32,38 @@
         <div class="row">
             <div class="col-sm-4 text-center">
                 <div class="featured">
-                    <div class="featured-img featured-img-2" style="background-image: url('/images/men.jpg');">
-                        <h2>Giày thường</h2>
-                        <p><a href="#" class="btn btn-primary btn-lg">Mua ngay</a></p>
-                    </div>
+                    <a asp-controller="Product"
+                       asp-action="Index"
+                       asp-route-categoryId="1">
+                        <div class="featured-img featured-img-2" style="background-image: url('/images/men.jpg');">
+                            <h2>Giày thể thao</h2>
+                            <p><span class="btn btn-primary btn-lg">Mua ngay</span></p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="col-sm-4 text-center">
                 <div class="featured">
-                    <div class="featured-img featured-img-2" style="background-image: url('/images/women.jpg');">
-                        <h2>Giày công sở</h2>
-                        <p><a href="#" class="btn btn-primary btn-lg">Mua ngay</a></p>
-                    </div>
+                    <a asp-controller="Product"
+                       asp-action="Index"
+                       asp-route-categoryId="2">
+                        <div class="featured-img featured-img-2" style="background-image: url('/images/women.jpg');">
+                            <h2>Giày công sở</h2>
+                            <p><span class="btn btn-primary btn-lg">Mua ngay</span></p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="col-sm-4 text-center">
                 <div class="featured">
-                    <div class="featured-img featured-img-2" style="background-image: url('/images/item-11.jpg');">
-                        <h2>Giày thể thao</h2>
-                        <p><a href="#" class="btn btn-primary btn-lg">Mua ngay</a></p>
-                    </div>
+                    <a asp-controller="Product"
+                       asp-action="Index"
+                       asp-route-categoryId="3">
+                        <div class="featured-img featured-img-2" style="background-image: url('/images/item-1.jpg');">
+                            <h2>Giày sandal</h2>
+                            <p><span class="btn btn-primary btn-lg">Mua ngay</span></p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

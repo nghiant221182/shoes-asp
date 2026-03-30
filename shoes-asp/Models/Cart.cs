@@ -15,6 +15,7 @@ namespace shoes_asp.Models
         public Product? Product { get; set; }
 
         public int Quantity { get; set; }
+        public string? SelectedSize { get; set; }
 
         [NotMapped]
         public decimal TotalPrice => (Product != null) ? Product.Price * Quantity : 0;
