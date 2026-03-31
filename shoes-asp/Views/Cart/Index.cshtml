@@ -5,12 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     decimal grandTotal = Model.Sum(x => x.TotalPrice);
 }
-@if (TempData["Error"] != null)
-{
-    <div class="alert alert-danger">
-        @TempData["Error"]
-    </div>
-}
+
 <div class="colorlib-product">
     <div class="container">
         <div class="row">
@@ -69,6 +64,10 @@
 
                     <div class="text-right mt-4">
                         <h4>Tổng cộng: <strong>@grandTotal.ToString("N0") VNĐ</strong></h4>
+
+                        <a asp-controller="Order" asp-action="Checkout" class="btn btn-primary mt-3">
+                            Tiến hành đặt hàng
+                        </a>
                     </div>
                 }
             </div>

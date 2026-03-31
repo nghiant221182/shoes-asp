@@ -1,11 +1,24 @@
 ﻿@model shoes_asp.Models.Product
-
+@inject shoes_asp.Models.AppDbContext _context
 @{
     ViewData["Title"] = "Chi tiết sản phẩm";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@{
+    var userId = Context.Session.GetInt32("UserId");
+    bool isWishlisted = false;
 
-
+    if (userId != null)
+    {
+        isWishlisted = _context.Wishlists.Any(w => w.UserId == userId.Value && w.ProductId == Model.ProductId);
+    }
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["Error"]
+    </div>
+}
 
 <div class="colorlib-product">
     <div class="container">
@@ -125,13 +138,22 @@
                         </span>
                     </div>
 
-                    <div class="row">
-                        <div class="col-sm-12 text-center">
-                            <p class="addtocart mb-0">
-                                <button type="submit" class="btn btn-primary btn-addtocart">
-                                    Thêm vào giỏ hàng
-                                </button>
-                            </p>
+
+                    <div class="row mt-3">
+                        <div class="col-sm-6 pr-1 text-center">
+                            <button type="submit" class="btn btn-primary btn-addtocart" style="width:100%;">
+                                Thêm vào giỏ hàng
+                            </button>
+                        </div>
+
+                        <div class="col-sm-6 pl-1 text-center">
+                            <a asp-controller="Wishlist"
+                               asp-action="Toggle"
+                               asp-route-productId="@Model.ProductId"
+                               class="btn btn-light"
+                               style="border:1px solid #ddd; width:100%;">
+                                @(isWishlisted ? "Đã yêu thích" : "Thêm vào yêu thích")
+                            </a>
                         </div>
                     </div>
                 </form>

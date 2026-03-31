@@ -1,0 +1,68 @@
+﻿@model List<shoes_asp.Models.Wishlist>
+
+@{
+    ViewData["Title"] = "Danh sách yêu thích";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="colorlib-product">
+    <div class="container">
+        <h2 class="mb-4">Danh sách yêu thích</h2>
+
+        @if (!Model.Any())
+        {
+            <div class="alert alert-warning text-center">
+                Bạn chưa có sản phẩm yêu thích nào.
+            </div>
+        }
+        else
+        {
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-3 col-lg-3 mb-4 text-center">
+                        <div class="product-entry border" style="position:relative;">
+                            <a asp-controller="Wishlist"
+                               asp-action="Remove"
+                               asp-route-id="@item.WishlistId"
+                               style="position:absolute; top:10px; right:10px; z-index:10;
+                  width:28px; height:28px;
+                  display:flex; align-items:center; justify-content:center;
+                  background:#fff; border-radius:50%;
+                  color:red; font-size:14px;">
+                                <i class="icon-cross"></i>
+                            </a>
+
+                            <a asp-controller="Product"
+                               asp-action="Details"
+                               asp-route-id="@item.Product?.ProductId"
+                               class="prod-img">
+                                <img src="~/images/@item.Product?.Image"
+                                     class="img-fluid"
+                                     alt="@item.Product?.Name"
+                                     style="width:100%; height:250px; object-fit:cover;">
+                            </a>
+
+                            <div class="desc">
+                                <h2>
+                                    <a asp-controller="Product"
+                                       asp-action="Details"
+                                       asp-route-id="@item.Product?.ProductId">
+                                        @item.Product?.Name
+                                    </a>
+                                </h2>
+
+                                <p>@item.Product?.Brand?.Name - @item.Product?.Category?.Name</p>
+
+                                <span class="price">
+                                    @item.Product?.Price.ToString("N0") VNĐ
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>

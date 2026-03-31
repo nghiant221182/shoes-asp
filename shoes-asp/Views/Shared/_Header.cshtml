@@ -1,32 +1,36 @@
 ﻿@using Microsoft.AspNetCore.Http
 @inject shoes_asp.Models.AppDbContext _context
+
 @{
     var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
     var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
 
     var userId = Context.Session.GetInt32("UserId");
     var userName = Context.Session.GetString("UserName");
+
     int cartCount = 0;
+    int wishlistCount = 0;
+
     if (userId != null)
     {
         cartCount = _context.Carts.Count(c => c.UserId == userId.Value);
+        wishlistCount = _context.Wishlists.Count(w => w.UserId == userId.Value);
     }
 }
 
 <nav class="colorlib-nav" role="navigation">
-
     <div class="top-menu">
         <div class="container">
 
-            <div class="row align-items-center mb-2">
+            <div class="row align-items-center mb-3">
                 <div class="col-sm-6 col-md-6">
                     <div id="colorlib-logo">
-                        <a asp-controller="Home" asp-action="Index">Cửa hàng giày</a>
+                        <a asp-controller="Home" asp-action="Index">TN STORE</a>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-6 text-right">
-                    <div class="header-account" style="display:flex; justify-content:flex-end; align-items:center; gap:15px; font-size:14px;">
+                <div class="col-sm-6 col-md-6">
+                    <div style="display:flex; justify-content:flex-end; align-items:center; gap:12px; font-size:14px;">
                         @if (userId == null)
                         {
                             <a asp-controller="Account" asp-action="Login">Đăng nhập</a>
@@ -35,6 +39,12 @@
                         }
                         else
                         {
+                            <a asp-controller="Order"
+                               asp-action="MyOrders"
+                               class="@(currentController == "Order" ? "active" : "")">
+                                Đơn hàng
+                            </a>
+                            <span>|</span>
                             <span>Xin chào, <strong>@userName</strong></span>
                             <span>|</span>
                             <a asp-controller="Account" asp-action="Logout">Đăng xuất</a>
@@ -44,7 +54,7 @@
             </div>
 
             <div class="row align-items-center">
-                <div class="col-sm-9 col-md-9">
+                <div class="col-sm-6 col-md-6">
                     <div class="menu-1">
                         <ul style="margin-bottom:0;">
                             <li class="@(currentController == "Home" && currentAction == "Index" ? "active" : "")">
@@ -62,30 +72,43 @@
                             <li class="@(currentController == "Home" && currentAction == "Contact" ? "active" : "")">
                                 <a asp-controller="Home" asp-action="Contact">Liên hệ</a>
                             </li>
-
-                            <li class="cart @(currentController == "Cart" ? "active" : "")">
-                                <a asp-controller="Cart" asp-action="Index">
-                                    <i class="icon-shopping-cart"></i>
-                                    Giỏ hàng [@cartCount]
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-sm-3 col-md-3">
-                    <form asp-controller="Product" asp-action="Index" method="get" class="search-wrap">
-                        <div class="form-group">
-                            <input type="search"
-                                   name="keyword"
-                                   class="form-control search"
-                                   placeholder="Tìm kiếm sản phẩm"
-                                   value="@Context.Request.Query["keyword"]">
-                            <button class="btn btn-primary submit-search text-center" type="submit">
-                                <i class="icon-search"></i>
-                            </button>
-                        </div>
-                    </form>
+                <div class="col-sm-6 col-md-6">
+                    <div style="display:flex; justify-content:flex-end; align-items:center; gap:18px; flex-wrap:wrap;">
+
+                        <form asp-controller="Product" asp-action="Index" method="get" class="search-wrap" style="margin-bottom:0; min-width:260px;">
+                            <div class="form-group" style="margin-bottom:0;">
+                                <input type="search"
+                                       name="keyword"
+                                       class="form-control search"
+                                       placeholder="Tìm kiếm sản phẩm"
+                                       value="@Context.Request.Query["keyword"]">
+                                <button class="btn btn-primary submit-search text-center" type="submit">
+                                    <i class="icon-search"></i>
+                                </button>
+                            </div>
+                        </form>
+
+                        <a asp-controller="Wishlist"
+                           asp-action="Index"
+                           class="@(currentController == "Wishlist" ? "active" : "")"
+                           style="display:flex; align-items:center; gap:6px; white-space:nowrap;">
+                            <i class="icon-heart"></i>
+                            <span>Yêu thích [@wishlistCount]</span>
+                        </a>
+
+                        <a asp-controller="Cart"
+                           asp-action="Index"
+                           class="@(currentController == "Cart" ? "active" : "")"
+                           style="display:flex; align-items:center; gap:6px; white-space:nowrap;">
+                            <i class="icon-shopping-cart"></i>
+                            <span>Giỏ hàng [@cartCount]</span>
+                        </a>
+
+                    </div>
                 </div>
             </div>
 

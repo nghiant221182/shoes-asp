@@ -1,0 +1,142 @@
+﻿@model List<shoes_asp.Models.Order>
+
+@{
+    ViewData["Title"] = "Đơn hàng của tôi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="colorlib-product">
+    <div class="container">
+
+        <h2 class="mb-4">Đơn hàng của tôi</h2>
+
+        @if (!Model.Any())
+        {
+            <div class="alert alert-warning text-center">
+                Bạn chưa có đơn hàng nào.
+            </div>
+        }
+        else
+        {
+            @foreach (var order in Model)
+            {
+                <div class="order-card mb-4 p-3 border">
+
+                    <!-- HEADER -->
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div>
+                            <strong>Mã đơn:</strong> #@order.OrderId <br />
+                            <small class="text-muted">
+                                @order.OrderDate.ToString("dd/MM/yyyy HH:mm")
+                            </small>
+                        </div>
+
+                        <div>
+                            <span class="order-status">
+                                @order.Status
+                            </span>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <!-- DANH SÁCH SẢN PHẨM -->
+                    @foreach (var item in order.OrderDetails.Take(2))
+                    {
+                        <div class="d-flex align-items-center mb-2">
+
+                            <!-- ẢNH -->
+                            <img src="~/images/@(item.Product?.Image ?? "default.png")"
+                                 style="width:60px; height:60px; object-fit:cover; border-radius:6px; margin-right:10px;" />
+
+                            <!-- TÊN -->
+                            <div style="flex:1;">
+                                <div>@item.Product?.Name</div>
+                                <small class="text-muted">
+                                    SL: @item.Quantity
+                                    @if (!string.IsNullOrEmpty(item.SelectedSize))
+                                    {
+                                        <span> - Size: @item.SelectedSize</span>
+                                    }
+                                </small>
+                            </div>
+
+                            <!-- GIÁ -->
+                            <div>
+                                @item.TotalPrice.ToString("N0") VNĐ
+                            </div>
+
+                        </div>
+                    }
+
+                    <!-- NẾU CÓ NHIỀU SP -->
+                    @if (order.OrderDetails.Count > 2)
+                    {
+                        <div class="text-muted mb-2">
+                            + @(order.OrderDetails.Count - 2) sản phẩm khác
+                        </div>
+                    }
+
+                    <hr />
+
+                    <!-- FOOTER -->
+                    <div class="d-flex justify-content-between align-items-center">
+
+                        <div>
+                            Tổng tiền:
+                            <strong class="text-danger">
+                                @order.TotalAmount.ToString("N0") VNĐ
+                            </strong>
+                        </div>
+
+                        <div>
+                            <a asp-action="Details"
+                               asp-route-id="@order.OrderId"
+                               class="btn btn-sm btn-primary">
+                                Xem chi tiết
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            }
+        }
+
+    </div>
+</div>
+
+<style>
+    .order-card {
+        border-radius: 10px;
+        background: #fff;
+        transition: 0.2s;
+    }
+
+        .order-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+    .order-status {
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 13px;
+        background: #f0f0f0;
+    }
+
+        /* Màu trạng thái */
+        .order-status:contains("Chờ") {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .order-status:contains("Đã giao") {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .order-status:contains("Đã hủy") {
+            background: #f8d7da;
+            color: #721c24;
+        }
+</style>

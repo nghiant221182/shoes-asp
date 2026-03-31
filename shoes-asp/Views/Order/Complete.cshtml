@@ -1,0 +1,28 @@
+﻿@model shoes_asp.Models.Order
+
+@{
+    ViewData["Title"] = "Đặt hàng thành công";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="colorlib-product">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="mb-4">Đặt hàng thành công</h2>
+            <p>Mã đơn hàng: <strong>#@Model.OrderId</strong></p>
+            <p>Người nhận: @Model.ReceiverName</p>
+            <p>Số điện thoại: @Model.ReceiverPhone</p>
+            <p>Địa chỉ: @Model.ShippingAddress</p>
+            <p>Trạng thái: @Model.Status</p>
+            <p>Tổng tiền: <strong>@Model.TotalAmount.ToString("N0") VNĐ</strong></p>
+
+            <a asp-controller="Home" asp-action="Index" class="btn btn-primary mt-3">
+                Về trang chủ
+            </a>
+
+            <a asp-controller="Order" asp-action="MyOrders" class="btn btn-outline-primary mt-3">
+                Xem đơn hàng của tôi
+            </a>
+        </div>
+    </div>
+</div>
