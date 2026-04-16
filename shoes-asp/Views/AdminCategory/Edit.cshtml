@@ -1,0 +1,27 @@
+﻿@model shoes_asp.Models.Category
+
+@{
+    ViewData["Title"] = "Sửa danh mục";
+    Layout = "~/Views/SharedAdmin/_AdminLayout.cshtml";
+}
+
+<h2 class="mb-4">Sửa danh mục</h2>
+
+<form asp-action="Edit" method="post">
+    <input asp-for="CategoryId" type="hidden" />
+
+    <div class="mb-3">
+        <label class="form-label">Tên danh mục</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

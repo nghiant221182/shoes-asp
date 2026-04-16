@@ -1,0 +1,35 @@
+﻿@model shoes_asp.Models.Category
+
+@{
+    ViewData["Title"] = "Xóa danh mục";
+    Layout = "~/Views/SharedAdmin/_AdminLayout.cshtml";
+}
+
+<h2 class="mb-4 text-danger">Xóa danh mục</h2>
+
+<div class="alert alert-warning">
+    Bạn có chắc muốn xóa danh mục này không?
+</div>
+
+<div class="mb-3">
+    <p><strong>ID:</strong> @Model.CategoryId</p>
+    <p><strong>Tên danh mục:</strong> @Model.Name</p>
+    <p><strong>Số sản phẩm:</strong> @(Model.Products?.Count ?? 0)</p>
+</div>
+
+@if (Model.Products != null && Model.Products.Any())
+{
+    <div class="alert alert-danger">
+        Danh mục này đang có sản phẩm nên không thể xóa.
+    </div>
+
+    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+}
+else
+{
+    <form asp-action="Delete" method="post">
+        <input asp-for="CategoryId" type="hidden" />
+        <button type="submit" class="btn btn-danger">Xác nhận xóa</button>
+        <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+    </form>
+}

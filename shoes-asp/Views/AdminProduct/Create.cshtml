@@ -1,0 +1,72 @@
+﻿@model shoes_asp.Models.Product
+
+@{
+    ViewData["Title"] = "Thêm sản phẩm";
+    Layout = "~/Views/SharedAdmin/_AdminLayout.cshtml";
+}
+
+<h2 class="mb-4">Thêm sản phẩm</h2>
+
+<form asp-action="Create" method="post">
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label>Tên sản phẩm</label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label>Giá</label>
+            <input asp-for="Price" class="form-control" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label>Ảnh</label>
+            <input asp-for="Image" class="form-control" placeholder="vd: item-1.jpg" />
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label>Tồn kho</label>
+            <input asp-for="Stock" class="form-control" />
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label>Rate</label>
+            <input asp-for="Rate" class="form-control" />
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label>Size</label>
+            <input asp-for="Size" class="form-control" placeholder="vd: 39,40,41,42" />
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label>Danh mục</label>
+            <select asp-for="CategoryId" asp-items="ViewBag.CategoryId" class="form-control">
+                <option value="">-- Chọn danh mục --</option>
+            </select>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label>Thương hiệu</label>
+            <select asp-for="BrandId" asp-items="ViewBag.BrandId" class="form-control">
+                <option value="">-- Chọn thương hiệu --</option>
+            </select>
+        </div>
+
+        <div class="col-md-12 mb-3">
+            <label>Mô tả</label>
+            <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-success">Lưu</button>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

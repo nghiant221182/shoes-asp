@@ -1,0 +1,117 @@
+﻿@model shoes_asp.Models.Order
+
+@{
+    ViewData["Title"] = "Chi tiết đơn hàng";
+    Layout = "~/Views/SharedAdmin/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <h2 class="mb-4">Chi tiết đơn hàng #@Model.OrderId</h2>
+
+    <div class="row">
+        <!-- Thông tin đơn hàng -->
+        <div class="col-md-8">
+            <div class="card shadow-sm border-0 rounded-3 mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Thông tin đơn hàng</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <p><strong>Khách hàng:</strong> @Model.User?.FullName</p>
+                            <p><strong>Người nhận:</strong> @Model.ReceiverName</p>
+                            <p><strong>Số điện thoại:</strong> @Model.ReceiverPhone</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>Ngày đặt:</strong> @Model.OrderDate.ToString("dd/MM/yyyy HH:mm")</p>
+                            <p>
+                                <strong>Trạng thái:</strong>
+                                <span class="badge bg-warning text-dark">@Model.Status</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p><strong>Địa chỉ giao hàng:</strong> @Model.ShippingAddress</p>
+
+                    @if (!string.IsNullOrEmpty(Model.Note))
+                    {
+                        <p><strong>Ghi chú:</strong> @Model.Note</p>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Cập nhật trạng thái -->
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0 rounded-3 mb-4">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">Cập nhật trạng thái</h5>
+                </div>
+                <div class="card-body">
+                    <form asp-controller="AdminOrder" asp-action="UpdateStatus" method="post">
+                        <input type="hidden" name="orderId" value="@Model.OrderId" />
+
+                        <div class="mb-3">
+                            <label class="form-label"><strong>Trạng thái đơn hàng</strong></label>
+                            <select name="status" class="form-select">
+                                <option value="Chờ xác nhận" selected="@(Model.Status == "Chờ xác nhận")">Chờ xác nhận</option>
+                                <option value="Đang giao" selected="@(Model.Status == "Đang giao")">Đang giao</option>
+                                <option value="Đã giao" selected="@(Model.Status == "Đã giao")">Đã giao</option>
+                                <option value="Đã hủy" selected="@(Model.Status == "Đã hủy")">Đã hủy</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">Cập nhật</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Danh sách sản phẩm -->
+    <div class="card shadow-sm border-0 rounded-3">
+        <div class="card-header bg-dark text-white">
+            <h5 class="mb-0">Danh sách sản phẩm trong đơn</h5>
+        </div>
+        <div class="card-body">
+            @foreach (var item in Model.OrderDetails)
+            {
+                <div class="d-flex align-items-center border rounded-3 p-3 mb-3 bg-light">
+                    <!-- Ảnh -->
+                    <div style="width:90px; height:90px; margin-right:15px;">
+                        <img src="~/images/@(item.Product?.Image ?? "default.png")"
+                             alt="@item.Product?.Name"
+                             class="img-fluid rounded"
+                             style="width:100%; height:100%; object-fit:cover;" />
+                    </div>
+
+                    <!-- Thông tin -->
+                    <div style="flex:1;">
+                        <h5 class="mb-1">@item.Product?.Name</h5>
+                        <p class="mb-1 text-muted">Giá: @item.UnitPrice.ToString("N0") VNĐ</p>
+                        <p class="mb-1">Số lượng: @item.Quantity</p>
+
+                        @if (!string.IsNullOrEmpty(item.SelectedSize))
+                        {
+                            <p class="mb-0">Kích cỡ: @item.SelectedSize</p>
+                        }
+                    </div>
+
+                    <!-- Thành tiền -->
+                    <div class="text-end">
+                        <strong class="text-danger fs-5">
+                            @item.TotalPrice.ToString("N0") VNĐ
+                        </strong>
+                    </div>
+                </div>
+            }
+
+            <div class="text-end mt-4">
+                <h4>
+                    Tổng tiền:
+                    <strong class="text-danger">@Model.TotalAmount.ToString("N0") VNĐ</strong>
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>

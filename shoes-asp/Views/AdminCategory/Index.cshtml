@@ -1,0 +1,47 @@
+﻿@model List<shoes_asp.Models.Category>
+
+@{
+    ViewData["Title"] = "Quản lý danh mục";
+    Layout = "~/Views/SharedAdmin/_AdminLayout.cshtml";
+}
+
+<h2 class="mb-4">Quản lý danh mục</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Thêm danh mục</a>
+</p>
+
+<table class="table table-bordered table-hover text-center align-middle">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Tên danh mục</th>
+            <th>Số sản phẩm</th>
+            <th style="width:180px;">Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CategoryId</td>
+                <td>@item.Name</td>
+                <td>@(item.Products?.Count ?? 0)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.CategoryId" class="btn btn-sm btn-primary">Sửa</a>
+                    <a asp-action="Delete" asp-route-id="@item.CategoryId" class="btn btn-sm btn-danger">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

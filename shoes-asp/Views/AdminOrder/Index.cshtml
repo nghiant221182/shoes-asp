@@ -1,0 +1,38 @@
+﻿@model List<shoes_asp.Models.Order>
+
+@{
+    ViewData["Title"] = "Quản lý đơn hàng";
+    Layout = "~/Views/SharedAdmin/_AdminLayout.cshtml";
+}
+
+<h2 class="mb-4">Quản lý đơn hàng</h2>
+
+<table class="table table-bordered table-hover text-center">
+    <thead class="table-dark">
+        <tr>
+            <th>Mã đơn</th>
+            <th>Khách hàng</th>
+            <th>Ngày đặt</th>
+            <th>Tổng tiền</th>
+            <th>Trạng thái</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>#@item.OrderId</td>
+                <td>@item.User?.FullName</td>
+                <td>@item.OrderDate.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>@item.TotalAmount.ToString("N0") VNĐ</td>
+                <td>@item.Status</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.OrderId" class="btn btn-sm btn-primary">
+                        Xem chi tiết
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

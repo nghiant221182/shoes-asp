@@ -12,7 +12,8 @@
 ## Giới thiệu
 
 Đây là đồ án xây dựng website bán giày sử dụng ASP.NET Core MVC.  
-Website cho phép người dùng xem sản phẩm, xem chi tiết, thêm vào giỏ hàng, yêu thích và đặt hàng.
+Website cho phép người dùng xem sản phẩm, xem chi tiết, thêm vào giỏ hàng, thêm vào danh sách yêu thích và đặt hàng.  
+Ngoài ra, hệ thống còn có trang quản trị (Admin) để quản lý dữ liệu và đơn hàng.
 
 ---
 
@@ -38,8 +39,22 @@ Website cho phép người dùng xem sản phẩm, xem chi tiết, thêm vào gi
 - Thêm vào giỏ hàng
 - Wishlist (Yêu thích)
 - Đặt hàng
+- Xem đơn hàng
 - Phân trang sản phẩm
 - Tìm kiếm sản phẩm
+
+---
+
+### Admin
+
+- Đăng nhập quản trị
+- Thêm / sửa / xóa sản phẩm
+- Quản lý danh mục
+- Quản lý thương hiệu
+- Quản lý đơn hàng
+- Cập nhật trạng thái đơn hàng
+
+---
 
 ### Quản lý dữ liệu
 

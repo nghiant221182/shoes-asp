@@ -55,7 +55,7 @@ namespace shoes_asp.Controllers
                 HttpContext.Session.SetInt32("UserId", user.UserId);
                 HttpContext.Session.SetString("UserName", user.FullName);
                 HttpContext.Session.SetString("UserEmail", user.Email);
-
+                HttpContext.Session.SetString("UserRole", user.Role);
                 return RedirectToAction("Index", "Home");
             }
 
@@ -67,6 +67,10 @@ namespace shoes_asp.Controllers
         {
             HttpContext.Session.Clear();
             return RedirectToAction("Index", "Home");
+        }
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
     }
 }

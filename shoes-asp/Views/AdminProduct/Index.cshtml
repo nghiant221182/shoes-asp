@@ -1,0 +1,56 @@
+﻿@model List<shoes_asp.Models.Product>
+
+@{
+    ViewData["Title"] = "Quản lý sản phẩm";
+    Layout = "~/Views/SharedAdmin/_AdminLayout.cshtml";
+}
+
+<h2 class="mb-4">Quản lý sản phẩm</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Thêm sản phẩm</a>
+</p>
+
+<table class="table table-bordered table-hover text-center align-middle">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Ảnh</th>
+            <th>Tên sản phẩm</th>
+            <th>Danh mục</th>
+            <th>Thương hiệu</th>
+            <th>Giá</th>
+            <th>Tồn kho</th>
+            <th>Rate</th>
+            <th>Size</th>
+            <th style="width:180px;">Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProductId</td>
+                <td>
+                    <img src="~/images/@item.Image" alt="@item.Name" style="width:60px; height:60px; object-fit:cover; border-radius:6px;" />
+                </td>
+                <td>@item.Name</td>
+                <td>@item.Category?.Name</td>
+                <td>@item.Brand?.Name</td>
+                <td>@item.Price.ToString("N0") VNĐ</td>
+                <td>@item.Stock</td>
+                <td>@item.Rate</td>
+                <td>@item.Size</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ProductId" class="btn btn-sm btn-primary">Sửa</a>
+                    <a asp-action="Delete" asp-route-id="@item.ProductId" class="btn btn-sm btn-danger">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

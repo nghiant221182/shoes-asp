@@ -3,6 +3,86 @@
   "WorkspaceRootPath": "D:\\FL\\project_TN\\shoes-asp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\adminorder\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\adminorder\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\admincategory\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\admincategory\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\admincategory\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\admincategory\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\admincategory\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\admincategory\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\admincategory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\admincategory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\adminproduct\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\adminproduct\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\adminproduct\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\adminproduct\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\adminproduct\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\adminproduct\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\adminproduct\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\adminproduct\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\controllers\\adminproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\controllers\\adminproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\adminorder\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\adminorder\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\sharedadmin\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\sharedadmin\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\controllers\\adminordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\controllers\\adminordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\controllers\\adminbasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\controllers\\adminbasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -23,16 +103,8 @@
       "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\shared\\_breadcrumb.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\shared\\_breadcrumb.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -107,16 +179,8 @@
       "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|solutionrelative:shoes-asp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52468718-5E13-47D5-95C1-CE3A49CBBA86}|shoes-asp\\shoes-asp.csproj|d:\\fl\\project_tn\\shoes-asp\\shoes-asp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -162,7 +226,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -190,67 +254,228 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Header.cshtml",
-              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Shared\\_Header.cshtml",
-              "RelativeDocumentMoniker": "shoes-asp\\Views\\Shared\\_Header.cshtml",
-              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Shared\\_Header.cshtml",
-              "RelativeToolTip": "shoes-asp\\Views\\Shared\\_Header.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJMAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-16T09:21:00.045Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Product\\Details.cshtml",
-              "RelativeDocumentMoniker": "shoes-asp\\Views\\Product\\Details.cshtml",
-              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Product\\Details.cshtml",
-              "RelativeToolTip": "shoes-asp\\Views\\Product\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminCategory\\Delete.cshtml",
+              "RelativeDocumentMoniker": "shoes-asp\\Views\\AdminCategory\\Delete.cshtml",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminCategory\\Delete.cshtml",
+              "RelativeToolTip": "shoes-asp\\Views\\AdminCategory\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-16T09:24:12.523Z"
+              "WhenOpened": "2026-04-10T09:26:13.182Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Cart\\Index.cshtml",
-              "RelativeDocumentMoniker": "shoes-asp\\Views\\Cart\\Index.cshtml",
-              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Cart\\Index.cshtml",
-              "RelativeToolTip": "shoes-asp\\Views\\Cart\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminCategory\\Edit.cshtml",
+              "RelativeDocumentMoniker": "shoes-asp\\Views\\AdminCategory\\Edit.cshtml",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminCategory\\Edit.cshtml",
+              "RelativeToolTip": "shoes-asp\\Views\\AdminCategory\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-30T08:50:19.167Z"
+              "WhenOpened": "2026-04-10T09:25:51.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminCategory\\Create.cshtml",
+              "RelativeDocumentMoniker": "shoes-asp\\Views\\AdminCategory\\Create.cshtml",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminCategory\\Create.cshtml",
+              "RelativeToolTip": "shoes-asp\\Views\\AdminCategory\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-10T09:25:28.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminCategory\\Index.cshtml",
+              "RelativeDocumentMoniker": "shoes-asp\\Views\\AdminCategory\\Index.cshtml",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminCategory\\Index.cshtml",
+              "RelativeToolTip": "shoes-asp\\Views\\AdminCategory\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-10T09:24:38.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "shoes-asp\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "shoes-asp\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAgwJsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T09:21:49.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminProduct\\Delete.cshtml",
+              "RelativeDocumentMoniker": "shoes-asp\\Views\\AdminProduct\\Delete.cshtml",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminProduct\\Delete.cshtml",
+              "RelativeToolTip": "shoes-asp\\Views\\AdminProduct\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-10T09:17:37.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminProduct\\Edit.cshtml",
+              "RelativeDocumentMoniker": "shoes-asp\\Views\\AdminProduct\\Edit.cshtml",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminProduct\\Edit.cshtml",
+              "RelativeToolTip": "shoes-asp\\Views\\AdminProduct\\Edit.cshtml",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAYwEUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-10T09:17:16.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminProduct\\Create.cshtml",
+              "RelativeDocumentMoniker": "shoes-asp\\Views\\AdminProduct\\Create.cshtml",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminProduct\\Create.cshtml",
+              "RelativeToolTip": "shoes-asp\\Views\\AdminProduct\\Create.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-10T09:16:46.615Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "shoes-asp\\Views\\Product\\Index.cshtml",
-              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "shoes-asp\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminProduct\\Index.cshtml",
+              "RelativeDocumentMoniker": "shoes-asp\\Views\\AdminProduct\\Index.cshtml",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminProduct\\Index.cshtml",
+              "RelativeToolTip": "shoes-asp\\Views\\AdminProduct\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-16T09:22:18.363Z"
+              "WhenOpened": "2026-04-10T09:06:37.186Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "MyOrders.cshtml",
-              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Order\\MyOrders.cshtml",
-              "RelativeDocumentMoniker": "shoes-asp\\Views\\Order\\MyOrders.cshtml",
-              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Order\\MyOrders.cshtml",
-              "RelativeToolTip": "shoes-asp\\Views\\Order\\MyOrders.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI0AAAAIAAAAAAAAAA==",
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\SharedAdmin\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "shoes-asp\\Views\\SharedAdmin\\_AdminLayout.cshtml",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\SharedAdmin\\_AdminLayout.cshtml",
+              "RelativeToolTip": "shoes-asp\\Views\\SharedAdmin\\_AdminLayout.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwKQAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-30T11:44:57.905Z"
+              "WhenOpened": "2026-04-10T09:04:40.711Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminOrder\\Details.cshtml",
+              "RelativeDocumentMoniker": "shoes-asp\\Views\\AdminOrder\\Details.cshtml",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminOrder\\Details.cshtml",
+              "RelativeToolTip": "shoes-asp\\Views\\AdminOrder\\Details.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwHQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-10T08:53:33.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminOrder\\Index.cshtml",
+              "RelativeDocumentMoniker": "shoes-asp\\Views\\AdminOrder\\Index.cshtml",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\AdminOrder\\Index.cshtml",
+              "RelativeToolTip": "shoes-asp\\Views\\AdminOrder\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-10T08:51:32.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AdminOrderController.cs",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Controllers\\AdminOrderController.cs",
+              "RelativeDocumentMoniker": "shoes-asp\\Controllers\\AdminOrderController.cs",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Controllers\\AdminOrderController.cs",
+              "RelativeToolTip": "shoes-asp\\Controllers\\AdminOrderController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAgwDsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T08:50:28.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdminProductController.cs",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Controllers\\AdminProductController.cs",
+              "RelativeDocumentMoniker": "shoes-asp\\Controllers\\AdminProductController.cs",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Controllers\\AdminProductController.cs",
+              "RelativeToolTip": "shoes-asp\\Controllers\\AdminProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T08:48:37.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "shoes-asp\\Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "shoes-asp\\Views\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-10T08:47:59.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdminBaseController.cs",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Controllers\\AdminBaseController.cs",
+              "RelativeDocumentMoniker": "shoes-asp\\Controllers\\AdminBaseController.cs",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Controllers\\AdminBaseController.cs",
+              "RelativeToolTip": "shoes-asp\\Controllers\\AdminBaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T08:46:58.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_Header.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Shared\\_Header.cshtml",
+              "RelativeDocumentMoniker": "shoes-asp\\Views\\Shared\\_Header.cshtml",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Shared\\_Header.cshtml",
+              "RelativeToolTip": "shoes-asp\\Views\\Shared\\_Header.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-16T09:21:00.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "shoes-asp\\Views\\Home\\Index.cshtml",
@@ -262,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "shoes-asp\\Views\\Shared\\_Layout.cshtml",
@@ -270,11 +495,12 @@
               "RelativeToolTip": "shoes-asp\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-16T09:22:33.046Z"
+              "WhenOpened": "2026-03-16T09:22:33.046Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 25,
               "Title": "_Breadcrumb.cshtml",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Shared\\_Breadcrumb.cshtml",
               "RelativeDocumentMoniker": "shoes-asp\\Views\\Shared\\_Breadcrumb.cshtml",
@@ -286,20 +512,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 20,
               "Title": "_Footer.cshtml",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Shared\\_Footer.cshtml",
               "RelativeDocumentMoniker": "shoes-asp\\Views\\Shared\\_Footer.cshtml",
               "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Shared\\_Footer.cshtml",
               "RelativeToolTip": "shoes-asp\\Views\\Shared\\_Footer.cshtml",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGwAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAGwAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-16T09:21:41.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-16T09:21:41.736Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 24,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Order\\Details.cshtml",
               "RelativeDocumentMoniker": "shoes-asp\\Views\\Order\\Details.cshtml",
@@ -311,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 23,
               "Title": "CartController.cs",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "shoes-asp\\Controllers\\CartController.cs",
@@ -323,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 37,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Models\\Product.cs",
               "RelativeDocumentMoniker": "shoes-asp\\Models\\Product.cs",
@@ -335,7 +560,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Models\\User.cs",
+              "RelativeDocumentMoniker": "shoes-asp\\Models\\User.cs",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Models\\User.cs",
+              "RelativeToolTip": "shoes-asp\\Models\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T09:10:34.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "shoes-asp\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "shoes-asp\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwEkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T08:27:05.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "MyOrders.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Order\\MyOrders.cshtml",
+              "RelativeDocumentMoniker": "shoes-asp\\Views\\Order\\MyOrders.cshtml",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Order\\MyOrders.cshtml",
+              "RelativeToolTip": "shoes-asp\\Views\\Order\\MyOrders.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T11:44:57.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "shoes-asp\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "shoes-asp\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-16T09:22:18.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "shoes-asp\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "shoes-asp\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T08:50:19.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "shoes-asp\\Views\\Product\\Details.cshtml",
+              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Product\\Details.cshtml",
+              "RelativeToolTip": "shoes-asp\\Views\\Product\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-16T09:24:12.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Models\\Order.cs",
               "RelativeDocumentMoniker": "shoes-asp\\Models\\Order.cs",
@@ -347,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 33,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Models\\OrderDetail.cs",
               "RelativeDocumentMoniker": "shoes-asp\\Models\\OrderDetail.cs",
@@ -359,7 +658,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 29,
               "Title": "OrderController.cs",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "shoes-asp\\Controllers\\OrderController.cs",
@@ -371,7 +670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 31,
               "Title": "WishlistController.cs",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Controllers\\WishlistController.cs",
               "RelativeDocumentMoniker": "shoes-asp\\Controllers\\WishlistController.cs",
@@ -383,7 +682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 28,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Wishlist\\Index.cshtml",
               "RelativeDocumentMoniker": "shoes-asp\\Views\\Wishlist\\Index.cshtml",
@@ -395,7 +694,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 35,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Models\\Category.cs",
               "RelativeDocumentMoniker": "shoes-asp\\Models\\Category.cs",
@@ -407,7 +706,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 34,
               "Title": "Cart.cs",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Models\\Cart.cs",
               "RelativeDocumentMoniker": "shoes-asp\\Models\\Cart.cs",
@@ -419,7 +718,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 32,
               "Title": "Wishlist.cs",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Models\\Wishlist.cs",
               "RelativeDocumentMoniker": "shoes-asp\\Models\\Wishlist.cs",
@@ -431,7 +730,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 40,
               "Title": "Checkout.cshtml",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Order\\Checkout.cshtml",
               "RelativeDocumentMoniker": "shoes-asp\\Views\\Order\\Checkout.cshtml",
@@ -443,7 +742,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 39,
               "Title": "Complete.cshtml",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Order\\Complete.cshtml",
               "RelativeDocumentMoniker": "shoes-asp\\Views\\Order\\Complete.cshtml",
@@ -455,7 +754,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 38,
               "Title": "CheckoutViewModel.cs",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Models\\CheckoutViewModel.cs",
               "RelativeDocumentMoniker": "shoes-asp\\Models\\CheckoutViewModel.cs",
@@ -467,7 +766,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 41,
               "Title": "Brand.cs",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Models\\Brand.cs",
               "RelativeDocumentMoniker": "shoes-asp\\Models\\Brand.cs",
@@ -479,7 +778,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 45,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "shoes-asp\\Controllers\\ProductController.cs",
@@ -491,7 +790,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 46,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "shoes-asp\\Controllers\\HomeController.cs",
@@ -503,19 +802,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "shoes-asp\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "shoes-asp\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAIwEcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T08:27:05.056Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 43,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "shoes-asp\\Views\\Account\\Login.cshtml",
@@ -527,7 +814,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 42,
               "Title": "Register.cshtml",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "shoes-asp\\Views\\Account\\Register.cshtml",
@@ -539,19 +826,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Models\\User.cs",
-              "RelativeDocumentMoniker": "shoes-asp\\Models\\User.cs",
-              "ToolTip": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Models\\User.cs",
-              "RelativeToolTip": "shoes-asp\\Models\\User.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T09:10:34.371Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 44,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Program.cs",
               "RelativeDocumentMoniker": "shoes-asp\\Program.cs",
@@ -563,7 +838,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 49,
               "Title": "20260327122824_addmodel.cs",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Migrations\\20260327122824_addmodel.cs",
               "RelativeDocumentMoniker": "shoes-asp\\Migrations\\20260327122824_addmodel.cs",
@@ -575,7 +850,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 47,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "shoes-asp\\Views\\Home\\Privacy.cshtml",
@@ -587,7 +862,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 48,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\appsettings.json",
               "RelativeDocumentMoniker": "shoes-asp\\appsettings.json",
@@ -599,7 +874,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 53,
               "Title": "20260327123050_addmodel.cs",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Migrations\\20260327123050_addmodel.cs",
               "RelativeDocumentMoniker": "shoes-asp\\Migrations\\20260327123050_addmodel.cs",
@@ -611,7 +886,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 50,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Models\\AppDbContext.cs",
               "RelativeDocumentMoniker": "shoes-asp\\Models\\AppDbContext.cs",
@@ -623,7 +898,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 52,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "shoes-asp\\Views\\_ViewStart.cshtml",
@@ -635,7 +910,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 51,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "D:\\FL\\project_TN\\shoes-asp\\shoes-asp\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "shoes-asp\\Views\\_ViewImports.cshtml",

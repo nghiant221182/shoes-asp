@@ -4,6 +4,7 @@
 @{
     var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
     var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+    var userRole = Context.Session.GetString("UserRole");
 
     var userId = Context.Session.GetInt32("UserId");
     var userName = Context.Session.GetString("UserName");
@@ -39,6 +40,10 @@
                         }
                         else
                         {
+                            @if (Context.Session.GetString("UserRole") == "Admin")
+                            {
+                                <a asp-controller="AdminProduct" asp-action="Index">Trang quản trị</a>
+                            }
                             <a asp-controller="Order"
                                asp-action="MyOrders"
                                class="@(currentController == "Order" ? "active" : "")">
